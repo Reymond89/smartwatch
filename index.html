@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/eb8ab39ed3.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eb8ab39ed3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header__section">
+            <div class="header__logo-contain">
+                <i class="fa-solid fa-stopwatch"></i>
+             
+                <!-- <i class="fa-regular fa-stopwatch"></i> -->
+                <a class="header__logo" href="#">Honor</a>
+            </div>
+            <ul class="header__list">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Smartphone</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="header__switch">
+                <a class="header__button" href="#">Buy Now</a>
+                <i class="fa-solid fa-bars"></i>
+                <div class="switch">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+            </div>
+            
+        </header>
+        <section class="hero__container-wrapper">
+            <div class="hero__text-left">
+                <h1 class="hero__title">Smartwatch</h1>
+                <h4 class="hero__subtitle">ELEMENT SERIE</h4>
+                <p class="hero__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum enim, aliquid molestias facilis quam vero expedita!</p>
+
+                <div class="cover__container-cards">
+                    <article class="card">
+                        <h2 class="card__title">White</h2>
+                        <h4 class="card__subtitle">Element</h4>
+                        <img class="card__img" src="assets/img/main1.png" alt="clock">
+                    </article>
+                    <article class="card">
+                        <h2 class="card__title">Dark</h2>
+                        <h4 class="card__subtitle">Element</h4>
+                        <img class="card__img" src="assets/img/main2.png" alt="clock">
+                    </article>
+                    <article class="card">
+                        <h2 class="card__title">White</h2>
+                        <h4 class="card__subtitle">Element</h4>
+                        <img class="card__img" src="assets/img/main1.png" alt="clock">
+                    </article>
+                </div>
+            </div>
+            <picture class="hero__img-right">
+                <img class="hero__clock" src="assets/img/hero.png" alt="clock">
+                <i class="fa-solid fa-circle-arrow-down"></i>
+            </picture>
+        </section>
+
+    </div>
+    
+    <script>    
+        const darkMode = document.querySelector('.switch');
+
+        darkMode.addEventListener('click', ()=>{
+            document.body.classList.toggle('darkmode')
+        })
+    </script>
+
+    <script>
+        const menuHamburguesa = document.querySelector('.fa-bars');
+        const menuList = document.querySelector('.header__list');
+
+        menuHamburguesa.addEventListener('click', ()=>{
+            menuList.classList.toggle('mobile-btn');
+        })
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
