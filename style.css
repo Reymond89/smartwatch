@@ -282,9 +282,13 @@ body{
     }
 }
 
-
 .hero__clock{
     width: 100%;
+    transition: 0.6s ease-in;
+
+}
+.hero__clock:hover{
+    transform: scale(1.05);
 
 }
 .fa-circle-arrow-down{
